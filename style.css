@@ -77,11 +77,6 @@ footer {
   text-align: center;
 }
 
-.centerText {
-  text-align: center;
-  flex: 50%;
-}
-
 .apropos {
   display: flex;
 }
@@ -91,14 +86,19 @@ footer {
   columns: 3;
 }
 
-.rightSide {
-  flex: 25%;
-  padding-bottom: 100em;
-  background-color: chartreuse;
+.leftSide {
+  flex: 20%;
+  background-color: rgba(196, 193, 193, 0.068);
+  padding-bottom: 50em;
 }
 
-.leftSide {
-  flex: 25%;
-  background-color: aqua;
-  padding-bottom: 100em;
+.centerText {
+  text-align: center;
+  flex: 60%;
+}
+
+.rightSide {
+  flex: 20%;
+  padding-bottom: 50em;
+  background-color: rgba(196, 193, 193, 0.068);
 }
