@@ -1,0 +1,227 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30em, 1fr));
+  gap: 1em;
+  padding: 1em;
+}
+
+.artwork {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  transition: background-color 0.4s ease;
+}
+
+.artwork img {
+  max-width: 30em;
+  max-height: 20em;
+  min-width: 3em;
+  min-height: 2em;
+  border-bottom: 1px solid #ddd;
+}
+
+.artwork p {
+  margin: 0.75em 0 0;
+}
+
+.artwork:hover {
+  background-color: rgba(78, 78, 78, 0.301);
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 0.6em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 4em;
+  padding-left: 0.5em;
+  padding-bottom: 0.2em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 3em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4em;
+  transition: color 0.4s;
+}
+
+nav a:hover {
+  color: #cacaca;
+}
+
+footer {
+  padding: 2em;
+  color: rgba(0, 0, 0, 0.192);
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.centerText {
+  max-width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.artPageContainer
+{
+  justify-content: center;
+  display: flex;
+  columns: 2;
+}
+
+.artPageElement
+{
+  max-width: 65%;
+  margin: auto;
+  text-align: center;
+}
+
+.artTextPage
+{
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.artPageElement img
+{
+  max-width: 30em;
+  max-height: 20em;
+  min-width: 3em;
+  min-height: 2em;
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 75em) 
+{
+  .artPageContainer
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 0.4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+
+  .artPageElement img
+{
+  max-width: 25em;
+  max-height: 15em;
+  min-width: 3em;
+  min-height: 2em;
+  margin: auto;
+  text-align: center;
+}
+
+  .logo {
+    font-size: 2em;
+    padding-left: 0.5em;
+    padding-bottom: 0.2em;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 50em) 
+{
+  .artPageContainer
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 0.4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  
+  .logo {
+    font-size: 1,2em;
+    padding-left: 0.5em;
+    padding-bottom: 0.2em;
+    font-weight: bold;
+  }
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    transition: color 0.4s;
+  }
+  
+  .artwork img {
+    max-width: 20em;
+    max-height: 10em;
+    min-width: 3em;
+    min-height: 2em;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    gap: 1em;
+    padding: 1em;
+  }
+
+.artPageElement img
+{
+  max-width: 20em;
+  max-height: 10em;
+  min-width: 3em;
+  min-height: 2em;
+  margin: auto;
+  text-align: center;
+}
+
+.artPageElement 
+{
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+}
+
+div p
+{
+  text-align: left;
+}
